@@ -340,18 +340,13 @@ queueMicrotask(() => {
       el: '#vcomment',
       appId: '40hYuIDglGeNds5D6osVUVCb-gzGzoHsz',
       appKey: 'Y7o2GRzbsUrNVKnKSFwPtIoC',
-      avatar: 'monsterid',
-      serverURLs: '',
-      emojiMaps: "",
-      el: '#vcomment',
-      appId: '40hYuIDglGeNds5D6osVUVCb-gzGzoHsz',
-      appKey: 'Y7o2GRzbsUrNVKnKSFwPtIoC',
       placeholder: '填写QQ邮箱就会使用QQ头像喔~.',
       avatar: 'monsterid',
       meta: 'nick,mail'.split(','),
       pageSize: '10',
       lang: 'zh-CN',
       recordIP: false,
+      serverURLs: '',
       emojiMaps: "",
       enableQQ: true,
       path: window.location.pathname,
@@ -367,7 +362,7 @@ queueMicrotask(() => {
   const loadValine = async () => {
     if (typeof Valine === 'function') initValine()
     else {
-      await getScript('https://fastly.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js')
+      await getScript('https://cdn.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/valine_f/valine.min.js')
       initValine()
     }
   }
