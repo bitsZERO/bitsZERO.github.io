@@ -379,7 +379,7 @@ queueMicrotask(() => {
   const loadValine = async () => {
     if (typeof Valine === 'function') initValine()
     else {
-      await getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js')
+      await getScript('https://fastly.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js')
       initValine()
     }
   }
